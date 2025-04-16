@@ -924,6 +924,7 @@ ol li:before {
   max-height: 890px;
   width: 890px;
   height: 890px;
+  pointer-events: none;
 }
 .orbits .orbits-wrap {
   left: 0;
