@@ -655,6 +655,7 @@ ol li:before {
   background-color: #000000;
 }
 
+.cases-page .breadcrumbs,
 .blog-page .breadcrumbs {
   position: static;
 }
@@ -1884,6 +1885,123 @@ ol li:before {
   margin-top: 15px;
 }
 
+.cases-page {
+  background-color: #F3F3F4;
+}
+
+.cases-page-top {
+  margin-top: 15px;
+}
+.cases-page-top .select-list {
+  margin: 50px 25px 0;
+}
+.cases-page-top h1 {
+  text-align: center;
+}
+.cases-page-top__subtitle {
+  color: #2174F5;
+  font-size: 24px;
+  text-align: center;
+  max-width: 900px;
+  margin: 10px auto 0;
+}
+
+.cases-page-main__items {
+  margin-top: 60px;
+  display: grid;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  row-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.cases-page-main__items .caseCard {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  position: relative;
+}
+.cases-page-main__items .caseCard__title a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  -webkit-transition: all 120ms;
+  -moz-transition: all 120ms;
+  transition: all 120ms;
+}
+.cases-page-main__items .caseCard__title a:hover {
+  opacity: 0.85;
+}
+.cases-page-main__items .caseCard__link {
+  width: 60px;
+  height: 60px;
+  background-color: #181717;
+  right: 26px;
+  bottom: 33px;
+  border-radius: 50%;
+  position: absolute;
+  top: auto;
+  left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  -webkit-transition: all 120ms;
+  -moz-transition: all 120ms;
+  transition: all 120ms;
+}
+.cases-page-main__items .caseCard__link:hover {
+  opacity: 0.85;
+}
+.cases-page-main__items .caseCard__link svg {
+  fill: none;
+}
+.cases-page-main__items .caseCard__link .icon {
+  width: 16px;
+  height: 16px;
+}
+.cases-page-main__items .caseCard__tags {
+  margin-top: 20px;
+}
+.cases-page-main__items .caseCard__tags a {
+  text-decoration: none;
+  padding: 4px 9px;
+  font-size: 13px;
+  background-color: #f3f3f4;
+  border: 1px solid #E8E8E8;
+  border-radius: 20px;
+  color: #5a5a5a;
+  -webkit-transition: all 120ms;
+  -moz-transition: all 120ms;
+  transition: all 120ms;
+}
+.cases-page-main__items .caseCard__tags a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.cases-page-main__items .caseCard__img {
+  margin-top: 15px;
+}
+
+.cases-page-bottom {
+  background-color: #ffffff;
+  padding-bottom: 50px;
+}
+.cases-page-bottom .clients__title {
+  text-align: center;
+}
+
 @media screen and (max-width: 1320px) {
   h1 {
     font-size: 45px;
@@ -1965,6 +2083,9 @@ ol li:before {
   .blog-article__tags .select-list li {
     margin-right: 14px;
     margin-top: 10px;
+  }
+  .cases-page-main__items .caseCard {
+    padding: 25px 35px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -2182,6 +2303,28 @@ ol li:before {
   .thematic__title {
     font-size: 25px;
   }
+  .cases-page-top h1 {
+    text-align: left;
+  }
+  .cases-page-top__subtitle {
+    text-align: left;
+  }
+  .cases-page-top .select-list {
+    margin: 40px 0;
+  }
+  .cases-page-main__items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cases-page-main__items .caseCard__link {
+    width: 50px;
+    height: 50px;
+    right: 22px;
+    bottom: 28px;
+  }
+  .cases-page-main__items .caseCard__link .icon {
+    width: 12px;
+    height: 12px;
+  }
 }
 @media screen and (max-width: 768px) {
   h1 {
@@ -2211,6 +2354,15 @@ ol li:before {
     left: -webkit-calc(50vw - 20px) !important;
     left: -moz-calc(50vw - 20px) !important;
     left: calc(50vw - 20px) !important;
+  }
+  .cases-page-main__items {
+    grid-template-columns: 1fr;
+  }
+  .cases-page-main__items .caseCard__img {
+    max-width: unset;
+  }
+  .cases-page-main__items .caseCard__info {
+    max-width: unset;
   }
 }
 @media screen and (max-width: 480px) {
