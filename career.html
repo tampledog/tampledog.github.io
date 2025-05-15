@@ -1054,7 +1054,7 @@
         </div>
 
         <div class="discuss__action">
-          <a href="#" class="page__button page__button_blue discuss__button">
+          <a href="#" class="page__button page__button_blue discuss__button js-cv-button">
             <span>Надіслати CV</span>
             <svg>
               <use href="./images/assets/spritemap.5e2bffb2.svg#sprite-link_arrow"></use>
@@ -1064,6 +1064,69 @@
       </div>
     </div>
   </section>
+
+  <div class="cv-form js-cv-form">
+    <div class="cv-form__back js-cv-close"></div>
+    <div class="cv-form__wrapper">
+      <button data-close="" type="button" class="popup__close js-cv-close">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="25" cy="25" r="24.5" fill="#EBEAEA" stroke="#464646"></circle>
+          <path d="M16.5 16L34.5 34" stroke="#090909" stroke-linecap="round"></path>
+          <path d="M34 16.5L16 34.5" stroke="#090909" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <div class="cv-form__inner">
+        <div class="cv-form__content">
+          <form action="form-cv">
+            <div class="popup__head">
+              <p class="popup__title">Відгукнутись на вакансію</p>
+              <p class="popup__txt">Приєднуйтесь до команди професіоналів  digital-маркетингу</p>
+            </div>
+            <div class="form__items">
+              <div class="form__item">
+                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input"
+                       aria-required="true" aria-invalid="false" placeholder="Ваше ім'я*" value="" type="text"
+                       name="text-733">
+              </div>
+              <div class="form__item">
+
+                <input size="40" maxlength="400"
+                       class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel input"
+                       id="phone" aria-required="true" aria-invalid="false" placeholder="Hомер телефону*" value=""
+                       type="tel" name="tel-496">
+              </div>
+              <div class="form__item">
+                <input size="40" maxlength="400"
+                       class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email input"
+                       aria-invalid="false" placeholder="Ваш E-mail" value="" type="email" name="email-62">
+              </div>
+              <div class="form__item form__item--cv js-file-input">
+                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text input" aria-invalid="false"  value="" type="file" name="text-76">
+                <span>CV Додати резюме</span>
+              </div>
+              <div class="form__item item-textarea">
+                  <textarea cols="10" rows="4" maxlength="2000" class="wpcf7-form-control wpcf7-textarea input"
+                            aria-invalid="false" placeholder="Короткий супровідний лист" name="message"></textarea>
+              </div>
+              <div class="form__item item-acceptance">
+                  <span class="wpcf7-form-control wpcf7-acceptance optional"><span class="wpcf7-list-item"><label><input
+                          type="checkbox" name="acceptance-599" value="1" class="acceptance__input"
+                          aria-invalid="false"><span class="wpcf7-list-item-label">Надсилаючи повідомлення, я приймаю користувальницьку угоду та підтверджую, що ознайомлений та згоден з політикою конфіденційності даного сайту</span></label></span></span>
+              </div>
+            </div>
+            <div class="cv-form__button">
+              <button class="page__button page__button_blue" type="submit">
+                <span>Надіслати CV</span>
+                <svg>
+                  <use href="./images/assets/spritemap.5e2bffb2.svg#sprite-link_arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer class="footer" style="margin: 0;">
