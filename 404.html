@@ -1,25 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="icon" sizes="32x32" href="//favicon.svg" />
-  <link rel="icon" sizes="192x192" href="//favicon.svg" />
-  <link rel="apple-touch-icon" href="//favicon.svg" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.svg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" sizes="32x32" href="//favicon.svg"/>
+  <link rel="icon" sizes="192x192" href="//favicon.svg"/>
+  <link rel="apple-touch-icon" href="//favicon.svg"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-
+        rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
-
   <link rel="stylesheet" crossorigin href="./css/old.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Growthy</title>
-
   <style>
       body {
           overflow: hidden;
@@ -78,10 +73,8 @@
           color: #2174f5;
       }
   </style>
-
 </head>
-<body class="page-home">
-
+<body class="error-page">
 <header class="header">
   <div class="page__container">
     <div class="header__inner">
@@ -212,7 +205,8 @@
       </nav>
 
       <div class="header__actions">
-        <a href="#" id="toggle" data-popup="#popup" class="page__button page__button_blue header__button">Зв'язатися з нами</a>
+        <a href="#" id="toggle" data-popup="#popup" class="page__button page__button_blue header__button">Зв'язатися з
+          нами</a>
 
         <button class="header__humburger" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#sidebar" aria-controls="sidebar">
@@ -224,61 +218,41 @@
     </div>
   </div>
 </header>
+<div class="preloader">
+  <div class="preloader__inner">
+    <div class="preloader__logo">
+      <svg>
+        <use href="./images/assets/spritemap.5e2bffb2.svg#sprite-logo"></use>
+      </svg>
+    </div>
+
+    <div class="preloader__spinner">
+      <div class="spinner-border" role="status"></div>
+    </div>
+  </div>
+</div>
 
 <main>
-  <div class="box">
-
-    <ul>
-      <li>
-        <a href="main.html">Main page</a>
-      </li>
-      <li>
-        <a href="blog.html">Blog page</a>
-      </li>
-      <li>
-        <a href="article.html">Article page</a>
-      </li>
-      <li>
-        <a href="cases.html">Cases page</a>
-      </li>
-      <li>
-        <a href="case.html">Case detail page</a>
-      </li>
-      <li>
-        <a href="career.html">Career page</a>
-      </li>
-      <li>
-        <a href="vacancy.html">Vacancy page</a>
-      </li>
-      <li>
-        <a href="contacts.html">Contacts page</a>
-      </li>
-      <li>
-        <a href="about.html">About us page</a>
-      </li>
-      <li>
-        <a href="callbacks.html">Callbacks page</a>
-      </li>
-      <li>
-        <a href="404.html">404 page</a>
-      </li>
-      <li>
-        <a href="partners.html">Partners page</a>
-      </li>
-
-
-      <li>
-        <a href="menus.html">Menus</a>
-      </li>
-      <li>
-        <a href="single-page.html">Single page</a>
-      </li>
-      <li>
-        <a href="wordpress.html">Wordpress</a>
-      </li>
-    </ul>
-
-
+  <div class="page-error">
+    <div class="page__container">
+      <div class="page-error__inner">
+        <div class="page-error__info">
+          <h1 class="page-error__title">Помилка 404</h1>
+          <p class="page-error__sub">Сторінка не знайдена. Перевірте адресу або поверніться на головну сторінку сайту</p>
+          <a href="#" class="page__button page__button_blue">
+            <span>Повернутися на головну </span>
+            <svg>
+              <use href="./images/assets/spritemap.5e2bffb2.svg#sprite-link_arrow"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-error__image">
+          <div class="page-error__image-inner">
+            <img src="./images/404.png" alt="Error">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
 
@@ -397,7 +371,6 @@
     </div>
   </div>
 </footer>
-
 <div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
   <div class="offcanvas-body sidebar__body">
     <div class="sidebar__top">
@@ -411,7 +384,8 @@
       </div>
 
       <div class="sidebar__close">
-        <button type="button" class="btn-close sidebar__close-button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close sidebar__close-button" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
       </div>
     </div>
 
@@ -602,7 +576,6 @@
     </div>
   </div>
 </div>
-
 <div id="popup" data-lenis-prevent class="popup">
   <div class="popup__wrapper">
     <div class="popup__content">
@@ -620,8 +593,11 @@
         </div>
 
         <div class="wpcf7 no-js" id="wpcf7-f2274-o1" lang="uk" dir="ltr" data-wpcf7-id="2274">
-          <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-          <form action="/tarhetovana-reklama/#wpcf7-f2274-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+          <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p>
+            <ul></ul>
+          </div>
+          <form action="/tarhetovana-reklama/#wpcf7-f2274-o1" method="post" class="wpcf7-form init"
+                aria-label="Contact form" novalidate="novalidate" data-status="init">
             <div style="display: none;">
               <input type="hidden" name="_wpcf7" value="2274">
               <input type="hidden" name="_wpcf7_version" value="6.0.5">
@@ -652,11 +628,13 @@
                 <label for="check-05" class="checkbox__label">Tik-Tok</label>
               </div>
               <div class="checkbox">
-                <input id="check-06" class="checkbox__input" type="checkbox" name="digital-marketing[]" value="Digital marketing">
+                <input id="check-06" class="checkbox__input" type="checkbox" name="digital-marketing[]"
+                       value="Digital marketing">
                 <label for="check-06" class="checkbox__label">Digital marketing</label>
               </div>
               <div class="checkbox">
-                <input id="check-07" class="checkbox__input" type="checkbox" name="web-development[]" value="Web development">
+                <input id="check-07" class="checkbox__input" type="checkbox" name="web-development[]"
+                       value="Web development">
                 <label for="check-07" class="checkbox__label">Web development</label>
               </div>
               <div class="checkbox">
@@ -667,40 +645,54 @@
 
             <div class="form__items">
               <div class="form__item">
-                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input" aria-required="true" aria-invalid="false" placeholder="Ваше ім'я*" value="" type="text" name="text-733">
+                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input"
+                       aria-required="true" aria-invalid="false" placeholder="Ваше ім'я*" value="" type="text"
+                       name="text-733">
               </div>
               <div class="form__item">
 
-                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel input" id="phone" aria-required="true" aria-invalid="false" placeholder="Hомер телефону*" value="" type="tel" name="tel-496">
+                <input size="40" maxlength="400"
+                       class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel input"
+                       id="phone" aria-required="true" aria-invalid="false" placeholder="Hомер телефону*" value=""
+                       type="tel" name="tel-496">
               </div>
               <div class="form__item">
-                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email input" aria-invalid="false" placeholder="Ваш E-mail" value="" type="email" name="email-62">
+                <input size="40" maxlength="400"
+                       class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email input"
+                       aria-invalid="false" placeholder="Ваш E-mail" value="" type="email" name="email-62">
               </div>
               <div class="form__item">
-                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text input" aria-invalid="false" placeholder="Компанія" value="" type="text" name="text-76">
+                <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text input" aria-invalid="false"
+                       placeholder="Компанія" value="" type="text" name="text-76">
               </div>
               <div class="form__item item-textarea">
-                <textarea cols="10" rows="4" maxlength="2000" class="wpcf7-form-control wpcf7-textarea input" aria-invalid="false" placeholder="Кілька слів про проєкт" name="message"></textarea>
+                <textarea cols="10" rows="4" maxlength="2000" class="wpcf7-form-control wpcf7-textarea input"
+                          aria-invalid="false" placeholder="Кілька слів про проєкт" name="message"></textarea>
               </div>
               <div class="form__item item-acceptance">
-                <span class="wpcf7-form-control wpcf7-acceptance optional"><span class="wpcf7-list-item"><label><input type="checkbox" name="acceptance-599" value="1" class="acceptance__input" aria-invalid="false"><span class="wpcf7-list-item-label">Надсилаючи повідомлення, я приймаю користувальницьку угоду та підтверджую, що ознайомлений та згоден з політикою конфіденційності даного сайту</span></label></span></span>
+                <span class="wpcf7-form-control wpcf7-acceptance optional"><span class="wpcf7-list-item"><label><input
+                        type="checkbox" name="acceptance-599" value="1" class="acceptance__input"
+                        aria-invalid="false"><span class="wpcf7-list-item-label">Надсилаючи повідомлення, я приймаю користувальницьку угоду та підтверджую, що ознайомлений та згоден з політикою конфіденційності даного сайту</span></label></span></span>
               </div>
             </div>
 
-            <button class="wpcf7-form-control wpcf7-submit has-spinner page__button page__button_blue form__button" type="submit" value="Відправити"><span>Відправити</span>
-            </button><div class="wpcf7-response-output" aria-hidden="true"></div>
+            <button class="wpcf7-form-control wpcf7-submit has-spinner page__button page__button_blue form__button"
+                    type="submit" value="Відправити"><span>Відправити</span>
+            </button>
+            <div class="wpcf7-response-output" aria-hidden="true"></div>
           </form>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
 <script src="js/libs/main-BEODntqA.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/libs/popup.js"></script>
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/jquery.slick.min.js"></script>
 <script src="js/libs/inputmask.min.js"></script>
-<script src="js/main.js"></script>
-  </body>
+<script src="./js/main.js"></script>
+</body>
 </html>
